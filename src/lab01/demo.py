@@ -16,7 +16,7 @@ def main():
     print("Сравнение автобусов:")
     if bus1 == bus2:
         print("Автобусы одинаковые")
-    else:``
+    else:
         print("Автобусы разные")
 
     print()

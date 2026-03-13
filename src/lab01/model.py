@@ -14,8 +14,8 @@ class Bus:
         self._year = year
 
     
-    @property~
-    def number(self):
+    @property
+````    def number(self):
         return self._number
 
     @property
