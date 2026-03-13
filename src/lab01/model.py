@@ -15,7 +15,7 @@ class Bus:
 
     
     @property
-````    def number(self):
+    def number(self):
         return self._number
 
     @property
