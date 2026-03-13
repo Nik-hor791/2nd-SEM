@@ -98,4 +98,4 @@ if __name__ == "__main__":
 ```
 
 Вывод файла demo.py
-![alt text](images/lab01/01.img`)
+![`alt text`](images/lab01/01.png)
