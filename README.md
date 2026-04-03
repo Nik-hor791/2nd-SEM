@@ -57,5 +57,5 @@
 
 ## Вывод Demo.py
 
-![alt text](../../images/lab02/01.png)
-![alt text](../../images/lab02/02.png)
+![alt text](images/lab02/01.png)
+![alt text](images/lab02/02.png)
