@@ -108,5 +108,5 @@
 
 ## Запуск demo.py
 
-![alt text](../../images/lab03/01.png)
-![alt text](../../images/lab03/02.png)
+![alt text](images/lab03/01.png)
+![alt text](images/lab03/02.png)
