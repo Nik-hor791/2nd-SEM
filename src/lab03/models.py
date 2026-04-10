@@ -20,7 +20,7 @@ class ElectricBus(Bus):
         return self._charging_time
 
     def calculate_range(self, consumption_per_km: float = 0.8):
-        """Рассчитывает максимальный пробег на одной зарядке (км)"""
+        #Рассчитывает максимальный пробег на одной зарядке (км)
         if consumption_per_km <= 0:
             return 0
         return self._battery_capacity / consumption_per_km
