@@ -1,7 +1,6 @@
 from base import Bus
 
 class ElectricBus(Bus):
-    """Электроавтобус - дочерний класс"""
     
     def __init__(self, number: str, capacity: int, route: str, year: int, 
                  battery_capacity: float, charging_time: float):
@@ -19,22 +18,19 @@ class ElectricBus(Bus):
     @property
     def charging_time(self):
         return self._charging_time
-    
-    # Новый метод
+
     def calculate_range(self, consumption_per_km: float = 0.8):
         """Рассчитывает максимальный пробег на одной зарядке (км)"""
         if consumption_per_km <= 0:
             return 0
         return self._battery_capacity / consumption_per_km
-    
-    # Переопределение метода __str__
+
     def __str__(self):
         base_str = super().__str__()
         return f"{base_str} | Type: Electric | Battery: {self._battery_capacity} kWh | Charging: {self._charging_time}h"
 
 
 class DieselBus(Bus):
-    """Дизельный автобус - дочерний класс"""
     
     def __init__(self, number: str, capacity: int, route: str, year: int,
                  fuel_tank_capacity: float, fuel_consumption: float):
@@ -52,10 +48,8 @@ class DieselBus(Bus):
     @property
     def fuel_consumption(self):
         return self._fuel_consumption
-    
-    # Новый метод
+
     def calculate_range(self):
-        """Рассчитывает максимальный пробег на полном баке (км)"""
         if self._fuel_consumption <= 0:
             return 0
         return (self._fuel_tank_capacity / self._fuel_consumption) * 100

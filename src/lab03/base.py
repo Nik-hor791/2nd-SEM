@@ -1,6 +1,5 @@
 class Bus:
     def __init__(self, number: str, capacity: int, route: str, year: int):
-        # базовая проверка данных
         if not number:
             raise ValueError("Номер автобуса не может быть пустым")
         if capacity <= 0:
