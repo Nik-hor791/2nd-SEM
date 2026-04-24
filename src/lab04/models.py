@@ -70,7 +70,7 @@ class ElectricBus(Bus, Printable, Comparable, Chargeable):
         return f"ElectricBus[{self._number}] | Route: {self._route} | Cap: {self._capacity} | Battery: {self._battery_capacity}kWh | Charge: {self._battery_percentage}%"
 
     def get_short_info(self) -> str:
-        return f"E-{self._number} ({self._route}) 🔋{self._battery_percentage}%"
+        return f"E-{self._number} ({self._route}) {self._battery_percentage}%"
 
     # Реализация Comparable
     def compare_to(self, other) -> int:
@@ -123,7 +123,7 @@ class DieselBus(Bus, Printable, Comparable, Refuelable):
         return f"DieselBus[{self._number}] | Route: {self._route} | Cap: {self._capacity} | Tank: {self._fuel_tank_capacity}L | Fuel: {self._fuel_level}%"
 
     def get_short_info(self) -> str:
-        return f"D-{self._number} ({self._route}) ⛽{self._fuel_level}%"
+        return f"D-{self._number} ({self._route}) {self._fuel_level}%"
 
     # Реализация Comparable
     def compare_to(self, other) -> int:
