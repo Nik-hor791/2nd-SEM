@@ -56,17 +56,7 @@
 ## Особенности реализации
 
 ### 1. Создание интерфейса (ABC)
-```python
-from abc import ABC, abstractmethod
 
-class Printable(ABC):
-    @abstractmethod
-    def to_string(self) -> str:
-        pass
-    
-    @abstractmethod
-    def get_short_info(self) -> str:
-        pass
 
 Демонстрация (demo.py)
 
